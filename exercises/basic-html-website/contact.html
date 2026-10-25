@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="Description" content="My roadmap.sh single page CV exercise.">
+    <meta name="robots" content="index, follow">
+    <title>Contact</title>
+    <meta property="og:title" content="Contact - Basic HTML Website">
+    <meta property="og:description" content="My roadmap.sh Basic HTML Website exercise's Contact">
+    <meta property="og:image" content="https://example.com">
+    <meta property="og:url" content="https://localhost:3000">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="My roadmap.sh Basic HTML Website">
+    <meta property="og:locale" content="en_FI">
+    <meta property="og:image:alt" content="Example image with nothing to show for">
+    <link rel="icon" type="image/png" href="non-existing-favicon.ico">
+</head>
+
+<body>
+    <header>
+        <span>jwitick</span>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>&nbsp;/&nbsp;</li>
+                <li><a href="projects.html">Projects</a></li>
+                <li>&nbsp;/&nbsp;</li>
+                <li><a href="articles.html">Articles</a></li>
+                <li>&nbsp;/&nbsp;</li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <h1>Frontend developer</h1>
+        <p>html only with proper layout, no styling</p>
+    </header>
+
+    <main>
+        <p>I'd love to hear your feedback!</p>
+        <form action="/contact" method="post" name="contact">
+            <p><label for="name">Name:</label><br>
+            <input id="name" type="text" name="name" required placeholder="John Doe"></p>
+            <p><label for="email">Email:</label><br>
+            <input id="email" type="email" name="email" required placeholder="john.doe@example.com"></p>
+            <p><label for="phone">Phone:</label><br>
+            <input id="phone" type="tel" name="phone" placeholder="123 456 7890"></p>
+            <p><label for="message">Message:</label><br>
+            <textarea id="message" name="message" required rows="4" placeholder="Your message goes here"></textarea></p>
+            <p><input type="submit" value="Submit"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; all rights reserved 2025</p>
+    </footer>
+</body>
+
+</html>
