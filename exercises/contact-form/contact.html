@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="Description" content="My roadmap.sh Contact Form exercise.">
+    <meta name="robots" content="index, follow">
+    <title>Contact us</title>
+    <meta property="og:title" content="Contact Us - Contact Form">
+    <meta property="og:description" content="My roadmap.sh Contact Form exercise's Home">
+    <meta property="og:image" content="https://example.com">
+    <meta property="og:url" content="https://localhost:3000">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="My roadmap.sh Contact Form">
+    <meta property="og:locale" content="en_FI">
+    <meta property="og:image:alt" content="Example image with nothing to show for">
+    <link rel="icon" type="image/png" href="non-existing-favicon.ico">
+</head>
+
+<body>
+    <header>
+        <p>Acme Support</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <h1>Contact us</h1>
+        <p>Send us a message and we will get back to you.</p>
+        <form action="/contact" method="post" name="contact">
+            <p><label for="fullname">Full name</label>
+                <input id="fullname" type="text" name="fullname" required placeholder="John Doe">
+            </p>
+            <p><label for="email">Email</label>
+                <input id="email" type="email" name="email" required placeholder="john.doe@example.com">
+            </p>
+            <p><label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                    <option value="">Choose a topic</option>
+                    <option value="pricing">Pricing</option>
+                    <option value="features">Product features</option>
+                    <option value="cooperation">Co-operation</option>
+                </select>
+            <p><label for="message">Message</label>
+                <textarea id="message" name="message" required rows="4" minlength="80"
+                    placeholder="Your message goes here"></textarea>
+            </p>
+            <p>
+            <fieldset>
+                <legend>How did you hear about us?</legend>
+                <label><input type="radio" name="source" value="search"> Search</label><br>
+                <label><input type="radio" name="source" value="friend"> Friend</label><br>
+                <label><input type="radio" name="source" value="social-media"> Social media</label>
+            </fieldset>
+            </p>
+            <p><input id="subscribe" type="checkbox" name="subscribe" value="subscribe">
+                <label for="subscribe">Send me product updates</label>
+            <p><input type="submit" value="Submit"></p>
+        </form>
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; 2026 Acme Support</p>
+    </footer>
+</body>
+
+</html>
